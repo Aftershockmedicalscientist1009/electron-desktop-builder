@@ -1,10 +1,18 @@
-# Electron Desktop Builder
+# Electron Desktop Builder — AI Skill for Antigravity · Claude Code · Gemini CLI · Cursor
 
-> AI skill that converts web apps into Electron desktop applications.
+![Electron Desktop Builder](assets/banner.svg)
 
-[![Claude Code](https://img.shields.io/badge/Claude_Code-skill-blue)](https://claude.ai/claude-code)
-[![Antigravity](https://img.shields.io/badge/Antigravity-compatible-green)](https://antigravity.dev)
-[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Creator](https://img.shields.io/badge/Creator-SMARTbrain%20Activity-blue)](https://www.smartbrainactivity.ai)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](/LICENSE)
+[![Antigravity Skill](https://img.shields.io/badge/Antigravity-Skill-black?logo=google&logoColor=white)]()
+[![Claude Code](https://img.shields.io/badge/Claude_Code-Compatible-blue?logo=anthropic&logoColor=white)]()
+[![Gemini CLI](https://img.shields.io/badge/Gemini_CLI-Compatible-4285F4?logo=google&logoColor=white)]()
+[![Electron](https://img.shields.io/badge/Electron-Builder-47848F?logo=electron&logoColor=white)]()
+[![Node.js](https://img.shields.io/badge/Node.js-Compatible-339933?logo=nodedotjs&logoColor=white)]()
+
+An expert AI skill for AI coding assistants (like Claude, Antigravity, Cursor, etc.) designed to convert existing web applications into Electron desktop apps right from the chat or terminal.
+
+[Leer en Espanol](README.es.md)
 
 ## What this skill does
 
