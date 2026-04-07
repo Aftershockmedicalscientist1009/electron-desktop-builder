@@ -86,7 +86,7 @@ El skill guiara al asistente a traves del proceso de 10 pasos definido en `SKILL
 
 ---
 
-**Creado por** [SMARTbrain Activity](https://smartpromptingsuite.com) | [info@smartpromptingsuite.com](mailto:info@smartpromptingsuite.com)
+**Creado por** [SMARTbrain Activity](https://www.smartbrainactivity.ai) | [hey@smartbrainactivity.ai](mailto:hey@smartbrainactivity.ai)
 
 ## Licencia
 

@@ -127,7 +127,7 @@ The skill adapts to whatever language you prompt in. Documentation is in English
 
 ---
 
-**Created by** [SMARTbrain Activity](https://smartpromptingsuite.com) | [info@smartpromptingsuite.com](mailto:info@smartpromptingsuite.com)
+**Created by** [SMARTbrain Activity](https://www.smartbrainactivity.ai) | [hey@smartbrainactivity.ai](mailto:hey@smartbrainactivity.ai)
 
 ## License
 
